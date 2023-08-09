@@ -1,0 +1,53 @@
+@import url("../../node_modules/normalize.css/normalize.css");
+.navigation {
+  background: #210e09;
+}
+.navigation .navigation-container {
+  width: 1310px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.navigation .navigation-container .navigation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .navigation-container .navigation-content img {
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+}
+.navigation .navigation-container .navigation-content .links {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.navigation .navigation-container .navigation-content .links a {
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+}
+.navigation .navigation-container .navigation-content .links a.active {
+  color: #d5621d;
+}
+.navigation .navigation-container .navigation-content .booking-button {
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #d5621d;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.navigation .navigation-container .navigation-content .booking-button:hover {
+  border: 2px solid white;
+  color: #d5621d;
+}/*# sourceMappingURL=main.css.map */
