@@ -1,0 +1,106 @@
+.section1 {
+  .section1-container {
+    width: 1310px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    .section1-content {
+      display: flex;
+      margin-top: 30px;
+      gap: 25px;
+      .section1-main-photo {
+        h2 {
+          position: absolute;
+
+          font-family: $main-font-family;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 660;
+          letter-spacing: 0.9px;
+          color: black;
+
+          left: 60px;
+          bottom: 195px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          background-color: white;
+        }
+        p {
+          position: absolute;
+
+          color: white;
+          font-family: $main-font-family;
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+
+          bottom: 65px;
+          left: 60px;
+        }
+        position: relative;
+        width: 856px;
+        height: 540px;
+        background-size: cover;
+      }
+      .slider-container {
+        background-color: $second-background;
+        width: 466px;
+        height: 540px;
+        padding: 18px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        h3 {
+          cursor: pointer;
+          margin: 15px 0px 30px 0px;
+          font-family: $main-font-family;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: white;
+          text-align: center;
+          transition: all 0.2s ease-in-out;
+        }
+        h3:hover {
+          color: $orange-background-color;
+        }
+        .slider {
+          img {
+            width: 160px;
+            height: 200px;
+          }
+          display: grid;
+          grid-template-columns: repeat(2, 160px);
+          gap: 26px;
+          justify-content: space-around;
+          .slide {
+            cursor: pointer;
+            height: 200px;
+            opacity: 1;
+            transform: translateX(0px);
+            transition: opacity 1s ease, transform 1s ease;
+          }
+          .animate-in {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 1s ease, transform 1s ease;
+          }
+        }
+        .slider:hover .slide {
+          opacity: 0.4;
+        }
+        .slider:hover .slide:hover {
+          opacity: 1;
+          
+          img{
+            transform: scale(1.1);
+            border: 3px solid $orange-background-color;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 @import url("../../node_modules/normalize.css/normalize.css");
-.navigation {
+body {
   background: #210e09;
 }
+
 .navigation .navigation-container {
   width: 1310px;
   margin: 0 auto;
@@ -11,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 .navigation .navigation-container .navigation-content img {
   width: 160px;
@@ -50,4 +52,104 @@
 .navigation .navigation-container .navigation-content .booking-button:hover {
   border: 2px solid white;
   color: #d5621d;
+}
+
+.section1 .section1-container {
+  width: 1310px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.section1 .section1-container .section1-content {
+  display: flex;
+  margin-top: 30px;
+  gap: 25px;
+}
+.section1 .section1-container .section1-content .section1-main-photo {
+  position: relative;
+  width: 856px;
+  height: 540px;
+  background-size: cover;
+}
+.section1 .section1-container .section1-content .section1-main-photo h2 {
+  position: absolute;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 660;
+  letter-spacing: 0.9px;
+  color: black;
+  left: 60px;
+  bottom: 195px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.section1 .section1-container .section1-content .section1-main-photo p {
+  position: absolute;
+  color: white;
+  font-family: "Nunito";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  bottom: 65px;
+  left: 60px;
+}
+.section1 .section1-container .section1-content .slider-container {
+  background-color: #33170b;
+  width: 466px;
+  height: 540px;
+  padding: 18px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.section1 .section1-container .section1-content .slider-container h3 {
+  cursor: pointer;
+  margin: 15px 0px 30px 0px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.section1 .section1-container .section1-content .slider-container h3:hover {
+  color: #d5621d;
+}
+.section1 .section1-container .section1-content .slider-container .slider {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  gap: 26px;
+  justify-content: space-around;
+}
+.section1 .section1-container .section1-content .slider-container .slider img {
+  width: 160px;
+  height: 200px;
+}
+.section1 .section1-container .section1-content .slider-container .slider .slide {
+  cursor: pointer;
+  height: 200px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.section1 .section1-container .section1-content .slider-container .slider .animate-in {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.section1 .section1-container .section1-content .slider-container .slider:hover .slide {
+  opacity: 0.4;
+}
+.section1 .section1-container .section1-content .slider-container .slider:hover .slide:hover {
+  opacity: 1;
+}
+.section1 .section1-container .section1-content .slider-container .slider:hover .slide:hover img {
+  transform: scale(1.1);
+  border: 3px solid #d5621d;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
