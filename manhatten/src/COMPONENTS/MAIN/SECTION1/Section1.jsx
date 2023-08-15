@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "./Slider";
+import SliderPosters from "./SliderPosters";
 import main_photo from "../../../IMAGES/section1-main-photo.png";
 import post1 from "../../../IMAGES/Post1.png";
 import post2 from "../../../IMAGES/Post2.png";
@@ -26,11 +26,13 @@ function Section1() {
             style={{ backgroundImage: `url(${main_photo})` }}
           >
             <h2>SINCE 1996</h2>
-            <p>True. Fontanka. <br /> Underground. </p>
+            <p>
+              True. Fontanka. <br /> Underground.{" "}
+            </p>
           </div>
           <div className="slider-container">
             <h3>upcoming performances</h3>
-            <Slider items={items} />
+            <SliderPosters items={items} />
           </div>
         </div>
       </div>

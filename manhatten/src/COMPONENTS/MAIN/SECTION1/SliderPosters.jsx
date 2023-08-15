@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Slider = ({ items }) => {
+const SliderPosters = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationClasses, setAnimationClasses] = useState("");
   useEffect(() => {
@@ -30,7 +30,7 @@ const Slider = ({ items }) => {
   }, [currentIndex]);
   const navigation = useNavigate()
   function go_to_posts() {
-    navigation("/poster")
+    navigation("/posters")
   }
   return (
     <div className="slider">
@@ -42,4 +42,4 @@ const Slider = ({ items }) => {
     </div>
   );
 };
-export default Slider;
+export default SliderPosters;

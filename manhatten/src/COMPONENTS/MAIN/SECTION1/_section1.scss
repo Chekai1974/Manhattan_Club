@@ -93,11 +93,9 @@
         }
         .slider:hover .slide:hover {
           opacity: 1;
-          
-          img{
+
+          img {
             transform: scale(1.1);
-            border: 3px solid $orange-background-color;
-            border-radius: 5px;
           }
         }
       }

@@ -12,16 +12,11 @@ function Navigation() {
         <div className="navigation-content">
           <img src={logo} alt="Logo" onClick={() => navigation("/")} />
           <div className="links">
-            <NavLink
-              to="/"
-              activeClassName={location.pathname === "/" ? "active" : ""}
-            >
-              Main
-            </NavLink>
-            <NavLink to="/menu">Menu</NavLink>
-            <NavLink to="/poster">Poster</NavLink>
-            <NavLink to="gallery">Gallery</NavLink>
-            <NavLink to="news">News</NavLink>
+            <NavLink to="/" className={location.pathname === "/" ? "active" : ""}> Main</NavLink>
+            <NavLink to="/menu" className={location.pathname === "/menu" ? "active" : ""}>Menu</NavLink>
+            <NavLink to="/posters" className={location.pathname === "/posters" ? "active" : ""}>Posters</NavLink>
+            <NavLink to="/gallery" className={location.pathname === "/gallery" ? "active" : ""}>Gallery</NavLink>
+            <NavLink to="/news" className={location.pathname === "/news" ? "active" : ""}>News</NavLink>
           </div>
           <button
             className="booking-button"
