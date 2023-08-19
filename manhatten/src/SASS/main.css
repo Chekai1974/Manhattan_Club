@@ -162,17 +162,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.section2 .section2-container .section2-content .menu-title p {
-  display: inline-flex;
-  padding: 10px 20px 10px 20px;
+.section2 .section2-container .section2-content .menu-title #watch-logo {
   margin: 100px 0px 50px 0px;
-  border-radius: 5px;
-  background: #fff;
-  font-family: "Nunito";
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
 }
 .section2 .section2-container .section2-content .menu-title h2 {
   cursor: pointer;
@@ -301,7 +292,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px auto 0px auto;
+  margin: 70px auto 0px auto;
   cursor: pointer;
   width: 175px;
   height: 60px;
@@ -361,4 +352,423 @@ body {
 }
 .section2 .section2-container .section2-content .pages-quantity .active-page {
   background-color: orange;
+}
+
+.section3 .section3-container {
+  width: 1310px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.section3 .section3-container .section3-content {
+  margin-top: 150px;
+}
+.section3 .section3-container .section3-content .grid-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.section3 .section3-container .section3-content .grid-boxes img {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+  width: 95%;
+}
+.section3 .section3-container .section3-content .grid-boxes .btn-more {
+  width: 130px;
+  height: 45px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #d5621d;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5.7px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.section3 .section3-container .section3-content .grid-boxes .btn-more:hover {
+  border: 2px solid white;
+  color: #d5621d;
+}
+.section3 .section3-container .section3-content .grid-boxes .box1,
+.section3 .section3-container .section3-content .grid-boxes .box2 {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 540px;
+}
+.section3 .section3-container .section3-content .grid-boxes .box1 h1,
+.section3 .section3-container .section3-content .grid-boxes .box2 h1 {
+  font-family: "Nunito";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+.section3 .section3-container .section3-content .grid-boxes .box1 #text-boxes,
+.section3 .section3-container .section3-content .grid-boxes .box2 #text-boxes {
+  font-family: "Nunito";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  width: 326px;
+  color: white;
+  line-height: 19px;
+}
+
+.section4 .section4-container {
+  width: 1310px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.section4 .section4-container .section4-content {
+  margin-top: 150px;
+}
+.section4 .section4-container .section4-content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section4 .section4-container .section4-content .title h1 {
+  margin: 50px 0px 50px 0px;
+  font-family: "Nunito";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+.section4 .section4-container .section4-content .title h1::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #d5621d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.section4 .section4-container .section4-content .title h1:hover::after {
+  transform: scaleX(1);
+}
+.section4 .section4-container .section4-content .content-container {
+  display: flex;
+  justify-content: space-around;
+}
+.section4 .section4-container .section4-content .content-container .drops-down {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .drop1,
+.section4 .section4-container .section4-content .content-container .drops-down .drop2,
+.section4 .section4-container .section4-content .content-container .drops-down .drop3,
+.section4 .section4-container .section4-content .content-container .drops-down .drop4,
+.section4 .section4-container .section4-content .content-container .drops-down .drop5,
+.section4 .section4-container .section4-content .content-container .drops-down .drop6 {
+  width: 526px;
+  padding: 20px 40px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #33170b;
+  transition: all 0.5s ease-in-out;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .drop1 .drop-title,
+.section4 .section4-container .section4-content .content-container .drops-down .drop2 .drop-title,
+.section4 .section4-container .section4-content .content-container .drops-down .drop3 .drop-title,
+.section4 .section4-container .section4-content .content-container .drops-down .drop4 .drop-title,
+.section4 .section4-container .section4-content .content-container .drops-down .drop5 .drop-title,
+.section4 .section4-container .section4-content .content-container .drops-down .drop6 .drop-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .drop1 .drop-title p,
+.section4 .section4-container .section4-content .content-container .drops-down .drop2 .drop-title p,
+.section4 .section4-container .section4-content .content-container .drops-down .drop3 .drop-title p,
+.section4 .section4-container .section4-content .content-container .drops-down .drop4 .drop-title p,
+.section4 .section4-container .section4-content .content-container .drops-down .drop5 .drop-title p,
+.section4 .section4-container .section4-content .content-container .drops-down .drop6 .drop-title p {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .drop1 .drop-title .triangle,
+.section4 .section4-container .section4-content .content-container .drops-down .drop2 .drop-title .triangle,
+.section4 .section4-container .section4-content .content-container .drops-down .drop3 .drop-title .triangle,
+.section4 .section4-container .section4-content .content-container .drops-down .drop4 .drop-title .triangle,
+.section4 .section4-container .section4-content .content-container .drops-down .drop5 .drop-title .triangle,
+.section4 .section4-container .section4-content .content-container .drops-down .drop6 .drop-title .triangle {
+  width: 0;
+  height: 0;
+  display: block;
+  border: 10px solid transparent;
+  border-top-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .drop1 .drop-down-content,
+.section4 .section4-container .section4-content .content-container .drops-down .drop2 .drop-down-content,
+.section4 .section4-container .section4-content .content-container .drops-down .drop3 .drop-down-content,
+.section4 .section4-container .section4-content .content-container .drops-down .drop4 .drop-down-content,
+.section4 .section4-container .section4-content .content-container .drops-down .drop5 .drop-down-content,
+.section4 .section4-container .section4-content .content-container .drops-down .drop6 .drop-down-content {
+  position: absolute;
+  display: none;
+  background-color: #d5621d;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 0px 0px 10px 10px;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop:hover {
+  background-color: #d5621d;
+  margin-bottom: 140px;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop:hover .triangle {
+  transform: rotate(180deg);
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop:hover .active-drop-content {
+  margin-top: 20px;
+  width: 526px;
+  left: 0;
+  padding: 20px 40px;
+  position: absolute;
+  display: block;
+  opacity: 1;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop:hover .active-drop-content ul {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop-last:hover {
+  background-color: #d5621d;
+  margin-bottom: 100px;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop-last:hover .triangle {
+  transform: rotate(180deg);
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop-last:hover .active-drop-content {
+  margin-top: 20px;
+  width: 526px;
+  left: 0;
+  padding: 20px 40px;
+  position: absolute;
+  display: block;
+  opacity: 1;
+}
+.section4 .section4-container .section4-content .content-container .drops-down .active-drop-last:hover .active-drop-content ul {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section4 .section4-container .section4-content .content-container .djs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section4 .section4-container .section4-content .content-container .djs-info h1 {
+  margin: 0;
+  font-family: "Nunito";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards {
+  display: flex;
+  margin-top: 50px;
+  gap: 25px;
+}
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs1,
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs2 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
+}
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs1 img,
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs2 img {
+  cursor: pointer;
+  border-radius: 5px;
+}
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs1 p,
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs2 p {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: white;
+}
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs1 .icons,
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs2 .icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs1 .icons img,
+.section4 .section4-container .section4-content .content-container .djs-info .djs-cards .djs2 .icons img {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid #d5621d;
+}
+
+.footer .container-footer {
+  position: relative;
+  width: 1310px;
+  margin: 0 auto;
+}
+.footer .container-footer .content-footer {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .container-footer .content-footer h1 {
+  cursor: pointer;
+  margin: 50px 0px 80px 0px;
+  font-family: "Nunito";
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+.footer .container-footer .content-footer h1::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #d5621d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.footer .container-footer .content-footer h1:hover::after {
+  transform: scaleX(1);
+}
+.footer .container-footer .content-footer .contacts-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container-footer .content-footer .contacts-container .contacts {
+  display: inline-block;
+  padding: 50px;
+  background-color: #33170b;
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid #d5621d;
+}
+.footer .container-footer .content-footer .contacts-container .contacts p {
+  position: relative;
+}
+.footer .container-footer .content-footer .contacts-container .contacts p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.5s;
+}
+.footer .container-footer .content-footer .contacts-container .contacts p:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #d5621d;
+  transition: width 0.5s;
+}
+.footer .container-footer .content-footer .contacts-container .contacts .top {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  gap: 25px;
+}
+.footer .container-footer .content-footer .contacts-container .contacts .top #one,
+.footer .container-footer .content-footer .contacts-container .contacts .top #three,
+.footer .container-footer .content-footer .contacts-container .contacts .top #five {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: white;
+}
+.footer .container-footer .content-footer .contacts-container .contacts .top #two,
+.footer .container-footer .content-footer .contacts-container .contacts .top #four,
+.footer .container-footer .content-footer .contacts-container .contacts .top #six {
+  font-family: "Nunito";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+.footer .container-footer .content-footer .contacts-container .contacts .bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 20px;
+  border-top: 1px solid silver;
+}
+.footer .container-footer .content-footer .contacts-container .contacts .bottom #one,
+.footer .container-footer .content-footer .contacts-container .contacts .bottom #three {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: white;
+}
+.footer .container-footer .content-footer .contacts-container .contacts .bottom #two,
+.footer .container-footer .content-footer .contacts-container .contacts .bottom #four {
+  font-family: "Nunito";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+.footer .container-footer .content-footer .contacts-container .map {
+  border-radius: 5px;
+  border: 3px solid #d5621d;
+  position: relative;
+  width: 850px;
+  height: 650px;
+}
+.footer .container-footer .content-footer .copyright {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  padding: 30px 0px 30px 0px;
+  justify-content: space-between;
+  border-top: 1px solid silver;
+  font-family: "Nunito";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: silver;
 }/*# sourceMappingURL=main.css.map */

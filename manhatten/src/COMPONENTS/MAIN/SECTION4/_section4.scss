@@ -1,0 +1,184 @@
+.section4 {
+  .section4-container {
+    width: 1310px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    .section4-content {
+      margin-top: 150px;
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          margin: 50px 0px 50px 0px;
+          font-family: $main-font-family;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 800;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: white;
+        }
+        h1::after {
+          content: "";
+          display: block;
+          height: 5px;
+          background-color: $orange-background-color;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease;
+        }
+        h1:hover::after {
+          transform: scaleX(1);
+        }
+      }
+      .content-container {
+        display: flex;
+        justify-content: space-around;
+        .drops-down {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .drop1,
+          .drop2,
+          .drop3,
+          .drop4,
+          .drop5,
+          .drop6 {
+            width: 526px;
+            padding: 20px 40px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: $second-background;
+            transition: all 0.5s ease-in-out;
+            .drop-title {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              p {
+                font-family: $main-font-family;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: 0.9px;
+                text-transform: uppercase;
+              }
+              .triangle {
+                width: 0;
+                height: 0;
+                display: block;
+                border: 10px solid transparent;
+                border-top-color: white;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+            .drop-down-content {
+              position: absolute;
+              display: none;
+              background-color: $orange-background-color;
+              z-index: 1;
+              opacity: 0;
+              border-radius: 0px 0px 10px 10px;
+            }
+          }
+          .active-drop:hover {
+            background-color: $orange-background-color;
+            margin-bottom: 140px;
+            .triangle {
+              transform: rotate(180deg);
+            }
+            .active-drop-content {
+              margin-top: 20px;
+              width: 526px;
+              left: 0;
+              padding: 20px 40px;
+              position: absolute;
+              display: block;
+              opacity: 1;
+              ul {
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              }
+            }
+          }
+          .active-drop-last:hover {
+            background-color: $orange-background-color;
+            margin-bottom: 100px;
+            .triangle {
+              transform: rotate(180deg);
+            }
+            .active-drop-content {
+              margin-top: 20px;
+              width: 526px;
+              left: 0;
+              padding: 20px 40px;
+              position: absolute;
+              display: block;
+              opacity: 1;
+              ul {
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              }
+            }
+          }
+        }
+        .djs-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            margin: 0;
+            font-family: $main-font-family;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+          }
+          .djs-cards {
+            display: flex;
+            margin-top: 50px;
+            gap: 25px;
+            .djs1,
+            .djs2 {
+              display: flex;
+              flex-direction: column;
+              gap: 35px;
+              text-align: center;
+              img {
+                cursor: pointer;
+                border-radius: 5px;
+              }
+              p {
+                font-family: $main-font-family;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: 0.7px;
+                text-transform: uppercase;
+                color: white;
+              }
+              .icons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                img {
+                  cursor: pointer;
+                  padding: 6px;
+                  border-radius: 5px;
+                  border: 2px solid $orange-background-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from './NAVIGATION/Navigation'
 import Main from './MAIN/Main';
+import FeaturePage from './FEAURE_PAGE/FeaturePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/gallery"></Route>
         <Route path="/news"></Route>
         <Route path="/bookings"></Route>
+        <Route path="/featurepage" element={<FeaturePage/>}></Route>
       </Routes>
     </Router>
   );

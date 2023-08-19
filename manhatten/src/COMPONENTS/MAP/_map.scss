@@ -1,0 +1,144 @@
+.footer {
+  .container-footer {
+    position: relative;
+    width: 1310px;
+    margin: 0 auto;
+    .content-footer {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        cursor: pointer;
+        margin: 50px 0px 80px 0px;
+        font-family: $main-font-family;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+      }
+      h1::after {
+        content: "";
+        display: block;
+        height: 5px;
+        background-color: $orange-background-color;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+      h1:hover::after {
+        transform: scaleX(1);
+      }
+      .contacts-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .contacts {
+          display: inline-block;
+          padding: 50px;
+          background-color: $second-background;
+          text-align: left;
+          border-radius: 5px;
+          border: 2px solid $orange-background-color;
+          p {
+            position: relative;
+          }
+          p:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color:red;
+            transition: width 0.5s;
+          }
+
+          p:hover:after {
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            background-color:$orange-background-color;;
+            transition: width 0.5s;
+          }
+          .top {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 50px;
+            gap: 25px;
+            #one,
+            #three,
+            #five {
+              font-family: $main-font-family;
+              font-size: 18px;
+              font-weight: 700;
+              letter-spacing: 0.9px;
+              text-transform: uppercase;
+              color: white;
+            }
+            #two,
+            #four,
+            #six {
+              font-family: $main-font-family;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              color: white;
+            }
+          }
+          .bottom {
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            gap: 20px;
+            border-top: 1px solid silver;
+            #one,
+            #three {
+              font-family: $main-font-family;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              letter-spacing: 0.9px;
+              text-transform: uppercase;
+              color: white;
+            }
+            #two,
+            #four {
+              font-family: $main-font-family;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              color: white;
+            }
+          }
+        }
+        .map {
+          border-radius: 5px;
+          border: 3px solid $orange-background-color;
+          position: relative;
+          width: 850px;
+          height: 650px;
+        }
+      }
+      .copyright {
+        width: 100%;
+        display: flex;
+        margin-top: 100px;
+        padding: 30px 0px 30px 0px;
+        justify-content: space-between;
+        border-top: 1px solid silver;
+        font-family: $main-font-family;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: silver;
+      }
+    }
+  }
+}
