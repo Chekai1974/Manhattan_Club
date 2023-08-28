@@ -2,6 +2,7 @@ import React from "react";
 
 function WatchLogo() {
   const styles = {
+    width: "fit-content",
     display: "inline-flex",
     padding: "10px 20px 10px 20px",
     borderRadius: "5px",

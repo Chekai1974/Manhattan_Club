@@ -1,0 +1,74 @@
+.post-container {
+  width: 1310px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  .post-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    img {
+      border-radius: 5px;
+    }
+    .info {
+      padding: 20px;
+      border: 1px solid $orange-background-color;
+      border-top-left-radius: 37px 140px;
+      border-top-right-radius: 23px 130px;
+      border-bottom-left-radius: 110px 19px;
+      border-bottom-right-radius: 120px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      p {
+        width: fit-content;
+      }
+      #date {
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: $orange-background-color;
+        font-family: $main-font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: white;
+      }
+      #title {
+        font-family: $main-font-family;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        color: white;
+      }
+      #price {
+        padding: 8px 15px;
+        background-color: transparent;
+        border: 2px solid $orange-background-color;
+        border-radius: 5px;
+        font-family: $main-font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: white;
+      }
+      #description {
+        width: 300px;
+
+        font-family: $main-font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+}

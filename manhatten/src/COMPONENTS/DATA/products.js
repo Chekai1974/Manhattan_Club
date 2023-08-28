@@ -15,6 +15,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "dish",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "salads",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "deserts",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "deserts",
   },
   {
     id: 5,
@@ -51,6 +55,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "deserts",
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "burgers",
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "salads",
   },
   {
     id: 8,
@@ -78,5 +85,6 @@ export const products = [
     title: "Amet donec.",
     description:
       "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+    category: "burgers",
   },
 ];
