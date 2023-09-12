@@ -8,16 +8,12 @@ function SliderMenu({ items }) {
   useEffect(() => {
     function pagesCalculator() {
       const length = items.length;
-      console.log(length);
       const quantity_pages = length / 6;
-      console.log(quantity_pages);
       if (quantity_pages % 6 === 0) {
         setPages(quantity_pages);
-        console.log(pages);
       } else {
         const ceil = Math.ceil(quantity_pages);
         setPages(ceil);
-        console.log(pages);
       }
     }
     pagesCalculator();

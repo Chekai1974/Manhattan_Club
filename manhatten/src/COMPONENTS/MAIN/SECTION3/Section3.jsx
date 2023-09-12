@@ -9,7 +9,7 @@ function Section3() {
     navigation("/featurepage");
   }
   return (
-    <section3 className="section3">
+    <section className="section3">
       <div className="section3-container">
         <div className="section3-content">
           <div className="grid-boxes">
@@ -59,7 +59,7 @@ function Section3() {
           </div>
         </div>
       </div>
-    </section3>
+    </section>
   );
 }
 

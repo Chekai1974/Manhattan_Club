@@ -6,7 +6,9 @@ import Posters from './POSTERS/Posters';
 import FeaturePage from './FEATURE_PAGE/FeaturePage';
 import Poster from './POSTER/Poster';
 import Menu from './MENU/Menu';
-import Product from './PRODUCT/Product';
+import Gallery from './GALLERY/Gallery';
+import WhyWe from './WHY_WE/WhyWe';
+import Booking from './BOOKING/Booking';
 
 function App() {
   return (
@@ -15,12 +17,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Main></Main>}></Route>
         <Route path="/menu" element={<Menu/>}></Route>
-        <Route path="/menu/:id" element={<Product/>}></Route>
         <Route path="/posters" element={<Posters/>}></Route>
         <Route path="/poster/:id" element={<Poster/>}></Route>
-        <Route path="/gallery"></Route>
-        <Route path="/news"></Route>
-        <Route path="/bookings"></Route>
+        <Route path="/gallery" element={<Gallery/>}></Route>
+        <Route path="/news" element={<WhyWe/>}></Route>
+        <Route path="/bookings" element={<Booking/>}></Route>
         <Route path="/featurepage" element={<FeaturePage/>}></Route>
       </Routes>
     </Router>

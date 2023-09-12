@@ -16,7 +16,7 @@ function Navigation() {
             <NavLink to="/menu" className={location.pathname === "/menu" ? "active" : ""}>Menu</NavLink>
             <NavLink to="/posters" className={location.pathname === "/posters" ? "active" : ""}>Posters</NavLink>
             <NavLink to="/gallery" className={location.pathname === "/gallery" ? "active" : ""}>Gallery</NavLink>
-            <NavLink to="/news" className={location.pathname === "/news" ? "active" : ""}>News</NavLink>
+            <NavLink to="/news" className={location.pathname === "/news" ? "active" : ""}>Why we</NavLink>
           </div>
           <button
             className="booking-button"

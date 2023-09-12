@@ -34,7 +34,7 @@ function Menu() {
   }
   const renderCards = (elem) => {
     return (
-      <div key={elem.id} className="slide" onClick={() => navigation(`/menu/${elem.id}`)}>
+      <div key={elem.id} className="slide">
         <img src={elem.photo} alt="" />
         <div className="info">
           <h3 id="title">{elem.title}</h3>
